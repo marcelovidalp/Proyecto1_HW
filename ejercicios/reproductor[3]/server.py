@@ -22,7 +22,7 @@ def press_key(vk_code):
     ct.windll.user32.keybd_event(vk_code, 0, KEYEVENTF_KEYUP, 0)  # key up
 
 def main():
-    port = 'COM4'
+    port = 'COM3' / 'COM4' 
     baud = 9600
 
     print(f"[SERVER] Escuchando en {port}...")

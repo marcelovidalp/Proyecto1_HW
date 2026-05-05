@@ -9,7 +9,7 @@ def menu():
     print(10*"=")
 
 def main():
-    port = "COM3"
+    port = 'COM3' / 'COM4' 
     baud = 9600
 
     print(f"[CLIENTE] Conectando a {port}")

@@ -1,7 +1,7 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from wav_gen import (
+from ejercicios.ej4.wav_gen import (
     NOTAS, ESCALA_ASC, ESCALA_DESC,
     wWavMono, wWavStereo, genOndaStereo,
     reducirVolumen, limpiarCanalIzq,

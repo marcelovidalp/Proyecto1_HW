@@ -1,7 +1,7 @@
 import numpy as np, matplotlib.pyplot as plt
 
 FREQ_0 = 1000
-FREQ_1 = 500
+FREQ_1 = 50
 SAMPLE = 44100
 S_RATE = 44100.0
 

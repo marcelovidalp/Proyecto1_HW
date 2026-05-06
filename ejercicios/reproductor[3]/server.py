@@ -12,17 +12,17 @@ VK_CODES = {
     "VOL+":     0xAF,
     "VOL-":     0xAE,
     "MUTE":     0xAD,
-    "PAUSE":    0xB3,  # mismo que PLAY (toggle en media players)
+    "PAUSE":    0xB3,  
 }
 
 KEYEVENTF_KEYUP = 0x0002
 def press_key(vk_code):
     ct.windll.user32.keybd_event(vk_code, 0, 0, 0)  # key down
-    time.sleep(0.05)  # pausa
+    time.sleep(0.05)
     ct.windll.user32.keybd_event(vk_code, 0, KEYEVENTF_KEYUP, 0)  # key up
 
 def main():
-    port = 'COM3' / 'COM4' 
+    port = 'COM4' 
     baud = 9600
 
     print(f"[SERVER] Escuchando en {port}...")

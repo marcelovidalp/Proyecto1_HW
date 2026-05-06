@@ -9,7 +9,7 @@ def menu():
     print(10*"=")
 
 def main():
-    port = 'COM3' / 'COM4' 
+    port = 'COM3' 
     baud = 9600
 
     print(f"[CLIENTE] Conectando a {port}")
@@ -24,7 +24,7 @@ def main():
                     cmd = COMANDOS[opcion]
                     ser_client.write(f"{cmd}\n".encode("utf-8"))
                     response = ser_client.readline().decode("utf-8").strip()
-                    print(f"[RESPUESTA] {response}")
+                    print(f"[RESPUESTA]{cmd}")
                     if cmd == "EXIT":
                         break
                 else:

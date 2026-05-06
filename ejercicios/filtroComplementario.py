@@ -17,8 +17,8 @@ aS = [
 ]
 
 def Filter_Comp(aV, nA):
-    aF = np.zeros(nMAX)
-    aF[0] = aV[0]
+    # aF = np.zeros(nMAX)
+    aF = aV[0]
     for i in range(1,nMAX):
         aF[i] = nA * aV[i] + (1.0 - nA) * aF[i-1]
     return aF

@@ -23,7 +23,7 @@ EJERCICIOS = [
         "titulo": "Control Reproductor (Serial)",
         "desc":   "Envía comandos (PLAY, STOP, NEXT…) a un servidor vía puerto serial COM3.",
         "cmd":    [sys.executable, os.path.join(BASE, "reproductor[3]", "cliente.py")],
-        "aviso":  "Requiere hardware conectado al puerto COM3.",
+        "aviso":  None,
     },
     {
         "num":    4,
